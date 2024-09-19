@@ -1,5 +1,5 @@
 # entrainement-angular-playing-cards
-Projet d'initiation à Angular
+Projet d'initiation à Angular basé sur [cette vidéo](https://www.youtube.com/watch?v=U71TQN68QGU)
 
 # EntrainementAngularPlayingCards
 
