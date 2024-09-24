@@ -26,6 +26,10 @@
     --border-type-card:#e24b18;
     --bg-inner-card: linear-gradient(332deg, rgba(255,101,49,1) 0%, rgba(255,197,49,1) 35%, rgba(255,101,49,1) 100%);
   }
+  &.water{
+    --border-type-card:#1D5674;
+    --bg-inner-card: linear-gradient(332deg, #2E88B8 0%, #39A7E3 35%, #2E88B8 100%);
+  }
 }
 
 header{
