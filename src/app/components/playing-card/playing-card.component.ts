@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input} from '@angular/core';
+import { Component, input, Input, InputSignal} from '@angular/core';
 import { Monster } from '../../models/monster.model';
 
 @Component({
@@ -10,14 +10,11 @@ import { Monster } from '../../models/monster.model';
 	styleUrl: './playing-card.component.css'
 })
 export class PlayingCardComponent {
-
-	@Input({
- 		required: true,
- 		alias: 'my-monster',
- 		transform: (value: Monster) => {
- 			value.hp = value.hp / 1.2;
- 			return value;
- 		}
- 	}) monster: Monster = new Monster();
-
+  monster: InputSignal<Monster> = input(new Monster(), {
+    alias: 'my-monster',
+    transform: (value: Monster) => {
+      value.hp = value.hp / 1.5;
+      return value;
+    }
+  });
 }
